@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS.Windows.Controls.WP7", "CS.Windows.Controls.WP7\CS.Windows.Controls.WP7.csproj", "{62249A43-7585-4C60-91E3-31BF0AF18C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp.WP7", "ExampleApp.WP7\ExampleApp.WP7.csproj", "{55FBF769-89B6-4CCE-A724-08DD2C228DAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62249A43-7585-4C60-91E3-31BF0AF18C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62249A43-7585-4C60-91E3-31BF0AF18C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62249A43-7585-4C60-91E3-31BF0AF18C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62249A43-7585-4C60-91E3-31BF0AF18C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FBF769-89B6-4CCE-A724-08DD2C228DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FBF769-89B6-4CCE-A724-08DD2C228DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FBF769-89B6-4CCE-A724-08DD2C228DAF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{55FBF769-89B6-4CCE-A724-08DD2C228DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FBF769-89B6-4CCE-A724-08DD2C228DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FBF769-89B6-4CCE-A724-08DD2C228DAF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
