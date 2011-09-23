@@ -19,6 +19,13 @@ namespace ExampleApp.WP7
 		public MainPage()
 		{
 			InitializeComponent();
+
+			DataContext = new MainPageViewModel();
+		}
+
+		private void Button_Click( object sender, RoutedEventArgs e )
+		{
+			( (MainPageViewModel)DataContext ).ButtonClick( sender, e );
 		}
 	}
 }

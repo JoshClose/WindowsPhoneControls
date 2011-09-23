@@ -28,27 +28,60 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-			<StackPanel>
-				<TextBlock Text="TextBox" />
-				<TextBox />
-				
-				<TextBlock Text="WatermarkTextBox" />
-				<Controls:WatermarkTextBox Watermark="this is the watermark" />
-				
-				<TextBlock Text="Transparent WatermarkTextBox" />
-				<Controls:WatermarkTextBox Watermark="this is the watermark"
+			<ScrollViewer>
+				<StackPanel>
+					<TextBlock Text="TextBox" />
+					<TextBox />
+
+					<TextBlock Text="WatermarkTextBox" />
+					<Controls:WatermarkTextBox Watermark="this is the watermark" />
+					
+					<TextBlock Text="WatermarkTextBox with Text" />
+					<Controls:WatermarkTextBox Watermark="this is the watermark"
+											   Text="this is the text" />
+
+					<TextBlock Text="Transparent WatermarkTextBox" />
+					<Controls:WatermarkTextBox Watermark="this is the watermark"
 										   Background="Transparent"
 										   BorderBrush="Transparent"
 										   Foreground="White"
 										   FocusedForeground="Black"
 										   WatermarkForeground="White">
-					<Controls:WatermarkTextBox.WatermarkStyle>
-						<Style TargetType="ContentControl">
-							<Setter Property="Opacity" Value="1" />
-						</Style>
-					</Controls:WatermarkTextBox.WatermarkStyle>
-				</Controls:WatermarkTextBox>
-			</StackPanel>
+						<Controls:WatermarkTextBox.WatermarkStyle>
+							<Style TargetType="ContentControl">
+								<Setter Property="Opacity" Value="1" />
+							</Style>
+						</Controls:WatermarkTextBox.WatermarkStyle>
+					</Controls:WatermarkTextBox>
+
+					<TextBlock Text="PasswordBox" />
+					<PasswordBox />
+
+					<TextBlock Text="WatermarkPasswordBox" />
+					<Controls:WatermarkPasswordBox Watermark="this is the watermark" />
+					
+					<TextBlock Text="WatermarkPasswordBox with password" />
+					<Controls:WatermarkPasswordBox Watermark="this is the watermark"
+												   Password="this is the password" />
+
+					<TextBlock Text="Transparent WatermarkPasswordBox" />
+					<Controls:WatermarkPasswordBox
+					Background="Transparent"
+					BorderBrush="Transparent"
+					Foreground="White"
+					FocusedForeground="Black"
+					WatermarkForeground="White"
+					Watermark="this is the watermark">
+						<Controls:WatermarkPasswordBox.WatermarkStyle>
+							<Style TargetType="ContentControl">
+								<Setter Property="Opacity" Value="1" />
+							</Style>
+						</Controls:WatermarkPasswordBox.WatermarkStyle>
+					</Controls:WatermarkPasswordBox>
+
+					<Button Click="Button_Click">Button</Button>
+				</StackPanel>
+			</ScrollViewer>
 		</Grid>
     </Grid>
  

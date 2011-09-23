@@ -65,7 +65,7 @@ namespace CS.Windows.Controls
 		{
 			base.OnGotFocus( e );
 
-			SetWatermarkVisibility();
+			watermarkContent.Visibility = Visibility.Collapsed;
 			Foreground = FocusedForeground;
 		}
 
