@@ -1,4 +1,10 @@
-﻿<ResourceDictionary
+﻿<!--
+Copyright 2011 Josh Close
+This file is a part of CS.Windows.Controls and is licensed under the MS-PL
+See LICENSE.txt for details or visit http://www.opensource.org/licenses/ms-pl.html
+https://github.com/JoshClose/Windows.Controls
+-->
+<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:sys="clr-namespace:System;assembly=mscorlib"

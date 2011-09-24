@@ -1,4 +1,10 @@
-﻿using System.Reflection;
+﻿#region License
+// Copyright 2011 Josh Close
+// This file is a part of CS.Windows.Controls and is licensed under the MS-PL
+// See LICENSE.txt for details or visit http://www.opensource.org/licenses/ms-pl.html
+// https://github.com/JoshClose/Windows.Controls
+#endregion
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Resources;
