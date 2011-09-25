@@ -31,6 +31,8 @@ https://github.com/JoshClose/Windows.Controls
 			<Setter.Value>
 				<Style TargetType="ContentControl">
 					<Setter Property="Opacity" Value="0.5" />
+					<Setter Property="Padding" Value="2" />
+					<Setter Property="Margin" Value="{StaticResource PhoneTextBoxInnerMargin}" />
 				</Style>
 			</Setter.Value>
 		</Setter>
@@ -102,11 +104,12 @@ https://github.com/JoshClose/Windows.Controls
 								<VisualState x:Name="Unfocused"/>
 							</VisualStateGroup>
 						</VisualStateManager.VisualStateGroups>
-						<Border x:Name="EnabledBorder" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Margin="{StaticResource PhoneTouchTargetOverhang}">
+						<Border x:Name="EnabledBorder" Background="{TemplateBinding Background}"
+								BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" 
+								Margin="{StaticResource PhoneTouchTargetOverhang}">
 							<Grid Background="Transparent">
-								<ContentControl x:Name="WatermarkElement" BorderThickness="0" Padding="{TemplateBinding Padding}" 
+								<ContentControl x:Name="WatermarkElement" BorderThickness="0"
 												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
-												Margin="{StaticResource PhoneTextBoxInnerMargin}"
 												Content="{TemplateBinding WatermarkText}" Style="{TemplateBinding WatermarkStyle}"/>
 								<ContentControl x:Name="ContentElement" BorderThickness="0" Padding="{TemplateBinding Padding}" 
 												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 

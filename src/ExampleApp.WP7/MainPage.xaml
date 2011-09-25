@@ -34,11 +34,11 @@
 					<TextBox />
 
 					<TextBlock Text="WatermarkTextBox" />
-					<Controls:WatermarkTextBox WatermarkText="this is the watermark" />
+					<Controls:WatermarkTextBox WatermarkText="this is the watermark"/>
 					
 					<TextBlock Text="WatermarkTextBox with Text" />
 					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
-											   Text="this is the text" />
+											   Text="this is the text"/>
 
 					<TextBlock Text="Transparent WatermarkTextBox" />
 					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
