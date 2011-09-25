@@ -107,7 +107,7 @@ https://github.com/JoshClose/Windows.Controls
 								<ContentControl x:Name="WatermarkElement" BorderThickness="0" Padding="{TemplateBinding Padding}" 
 												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
 												Margin="{StaticResource PhoneTextBoxInnerMargin}"
-												Content="{TemplateBinding Watermark}" Style="{TemplateBinding WatermarkStyle}"/>
+												Content="{TemplateBinding WatermarkText}" Style="{TemplateBinding WatermarkStyle}"/>
 								<ContentControl x:Name="ContentElement" BorderThickness="0" Padding="{TemplateBinding Padding}" 
 												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
 												Margin="{StaticResource PhoneTextBoxInnerMargin}"/>

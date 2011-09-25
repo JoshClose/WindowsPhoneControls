@@ -22,16 +22,16 @@ namespace CS.Windows.Controls
 		private Brush originalForeground;
 		private ContentControl watermarkContent;
 
-		public static readonly DependencyProperty WatermarkProperty = DependencyProperty.Register( "Watermark", typeof( string ), typeof( WatermarkTextBox ), null );
+		public static readonly DependencyProperty WatermarkTextProperty = DependencyProperty.Register( "WatermarkText", typeof( string ), typeof( WatermarkTextBox ), null );
 
 		public static readonly DependencyProperty WatermarkStyleProperty = DependencyProperty.Register( "WatermarkStyle", typeof( Style ), typeof( WatermarkTextBox ), null );
 
 		public static readonly DependencyProperty FocusedForegroundProperty = DependencyProperty.Register( "FocusedForeground", typeof( Brush ), typeof( WatermarkTextBox ), null );
 
-		public string Watermark
+		public string WatermarkText
 		{
-			get { return (string)GetValue( WatermarkProperty ); }
-			set { SetValue( WatermarkProperty, value ); }
+			get { return (string)GetValue( WatermarkTextProperty ); }
+			set { SetValue( WatermarkTextProperty, value ); }
 		}
 
 		public Style WatermarkStyle

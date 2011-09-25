@@ -27,7 +27,7 @@ namespace CS.Windows.Controls
 
 		public static readonly DependencyProperty PasswordProperty = DependencyProperty.Register( "Password", typeof( string ), typeof( WatermarkPasswordBox ), new PropertyMetadata( OnPasswordPropertyChanged ) );
 
-		public static readonly DependencyProperty WatermarkProperty = DependencyProperty.Register( "Watermark", typeof( string ), typeof( WatermarkPasswordBox ), null );
+		public static readonly DependencyProperty WatermarkTextProperty = DependencyProperty.Register( "WatermarkText", typeof( string ), typeof( WatermarkPasswordBox ), null );
 
 		public static readonly DependencyProperty WatermarkStyleProperty = DependencyProperty.Register( "WatermarkStyle", typeof( Style ), typeof( WatermarkPasswordBox ), null );
 
@@ -43,10 +43,10 @@ namespace CS.Windows.Controls
 			set { SetValue( PasswordProperty, value ); }
 		}
 
-		public string Watermark
+		public string WatermarkText
 		{
-			get { return GetValue( WatermarkProperty ) as string; }
-			set { SetValue( WatermarkProperty, value ); }
+			get { return GetValue( WatermarkTextProperty ) as string; }
+			set { SetValue( WatermarkTextProperty, value ); }
 		}
 
 		public Style WatermarkStyle
