@@ -31,8 +31,6 @@ namespace CS.Windows.Controls
 
 		public static readonly DependencyProperty WatermarkStyleProperty = DependencyProperty.Register( "WatermarkStyle", typeof( Style ), typeof( WatermarkPasswordBox ), null );
 
-		public static readonly DependencyProperty WatermarkForegroundProperty = DependencyProperty.Register( "WatermarkForeground", typeof( Brush ), typeof( WatermarkPasswordBox ), null );
-
 		public static readonly DependencyProperty FocusedForegroundProperty = DependencyProperty.Register( "FocusedForeground", typeof( Brush ), typeof( WatermarkPasswordBox ), null );
 
 		public static readonly DependencyProperty SelectionBackgroundProperty = DependencyProperty.Register( "SelectionBackground", typeof( Brush ), typeof( WatermarkPasswordBox ), null );
@@ -55,12 +53,6 @@ namespace CS.Windows.Controls
 		{
 			get { return GetValue( WatermarkStyleProperty ) as Style; }
 			set { SetValue( WatermarkStyleProperty, value ); }
-		}
-
-		public Brush WatermarkForeground
-		{
-			get { return GetValue( WatermarkForegroundProperty ) as Brush; }
-			set { SetValue( WatermarkForegroundProperty, value ); }
 		}
 
 		public Brush FocusedForeground

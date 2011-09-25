@@ -27,7 +27,6 @@ https://github.com/JoshClose/Windows.Controls
 		<Setter Property="SelectionForeground" Value="{StaticResource PhoneTextBoxSelectionForegroundBrush}"/>
 		<Setter Property="BorderThickness" Value="{StaticResource PhoneBorderThickness}"/>
 		<Setter Property="Padding" Value="2"/>
-		<Setter Property="WatermarkForeground" Value="{StaticResource PhoneTextBoxForegroundBrush}" />
 		<Setter Property="WatermarkStyle">
 			<Setter.Value>
 				<Style TargetType="ContentControl">
@@ -106,11 +105,12 @@ https://github.com/JoshClose/Windows.Controls
 						<Border x:Name="EnabledBorder" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Margin="{StaticResource PhoneTouchTargetOverhang}">
 							<Grid Background="Transparent">
 								<ContentControl x:Name="WatermarkElement" BorderThickness="0" Padding="{TemplateBinding Padding}" 
-												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="{StaticResource PhoneTextBoxInnerMargin}"
-												Content="{TemplateBinding Watermark}" Style="{TemplateBinding WatermarkStyle}"
-												Foreground="{TemplateBinding WatermarkForeground}"/>
+												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+												Margin="{StaticResource PhoneTextBoxInnerMargin}"
+												Content="{TemplateBinding Watermark}" Style="{TemplateBinding WatermarkStyle}"/>
 								<ContentControl x:Name="ContentElement" BorderThickness="0" Padding="{TemplateBinding Padding}" 
-												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
+												HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+												Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
 							</Grid>
 						</Border>
 						<Border x:Name="DisabledOrReadonlyBorder" Visibility="Collapsed" Background="Transparent" BorderBrush="{StaticResource PhoneDisabledBrush}" BorderThickness="{TemplateBinding BorderThickness}" Margin="{StaticResource PhoneTouchTargetOverhang}" >

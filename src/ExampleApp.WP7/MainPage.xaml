@@ -45,8 +45,7 @@
 										   Background="Transparent"
 										   BorderBrush="Transparent"
 										   Foreground="White"
-										   FocusedForeground="Black"
-										   WatermarkForeground="White">
+										   FocusedForeground="Black">
 						<Controls:WatermarkTextBox.WatermarkStyle>
 							<Style TargetType="ContentControl">
 								<Setter Property="Opacity" Value="1" />
@@ -70,7 +69,6 @@
 					BorderBrush="Transparent"
 					Foreground="White"
 					FocusedForeground="Black"
-					WatermarkForeground="White"
 					Watermark="this is the watermark">
 						<Controls:WatermarkPasswordBox.WatermarkStyle>
 							<Style TargetType="ContentControl">
