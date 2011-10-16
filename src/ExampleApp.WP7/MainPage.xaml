@@ -36,9 +36,18 @@
 					<TextBlock Text="WatermarkTextBox" />
 					<Controls:WatermarkTextBox WatermarkText="this is the watermark"/>
 					
+					<TextBlock Text="WatermarkTextBox Data Bound" />
+					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
+											   Text="{Binding PreFilledText, Mode=TwoWay}"/>
+					
 					<TextBlock Text="WatermarkTextBox with Text" />
 					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
 											   Text="this is the text"/>
+					
+					<TextBlock Text="WatermarkTextBox Set Text On Click" />
+					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
+											   Text="{Binding FillOnClickText, Mode=TwoWay}" />
+					<Button Content="click to fill text" Click="Button_Click_1" />
 
 					<TextBlock Text="Transparent WatermarkTextBox" />
 					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
@@ -62,6 +71,11 @@
 					<TextBlock Text="WatermarkPasswordBox with password" />
 					<Controls:WatermarkPasswordBox WatermarkText="this is the watermark"
 												   Password="this is the password" />
+
+					<TextBlock Text="WatermarkPasswordBox Set Password On Click" />
+					<Controls:WatermarkPasswordBox WatermarkText="this is the watermark"
+												   Password="{Binding FillOnClickPassword, Mode=TwoWay}" />
+					<Button Content="click to fill password" Click="Button_Click_2" />
 
 					<TextBlock Text="Transparent WatermarkPasswordBox" />
 					<Controls:WatermarkPasswordBox

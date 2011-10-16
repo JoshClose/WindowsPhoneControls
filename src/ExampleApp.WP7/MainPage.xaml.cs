@@ -33,5 +33,15 @@ namespace ExampleApp.WP7
 		{
 			( (MainPageViewModel)DataContext ).ButtonClick( sender, e );
 		}
+
+		private void Button_Click_1( object sender, RoutedEventArgs e )
+		{
+			( (MainPageViewModel)DataContext ).FillTextBoxButtonClick( sender, e );
+		}
+
+		private void Button_Click_2( object sender, RoutedEventArgs e )
+		{
+			( (MainPageViewModel)DataContext ).FillPasswordBoxButtonClick( sender, e );
+		}
 	}
 }

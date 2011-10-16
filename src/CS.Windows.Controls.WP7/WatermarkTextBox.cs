@@ -2,7 +2,7 @@
 // Copyright 2011 Josh Close
 // This file is a part of CS.Windows.Controls and is licensed under the MS-PL
 // See LICENSE.txt for details or visit http://www.opensource.org/licenses/ms-pl.html
-// https://github.com/JoshClose/Windows.Controls
+// https://github.com/JoshClose/WindowsPhoneControls
 #endregion
 using System;
 using System.Net;
@@ -21,6 +21,7 @@ namespace CS.Windows.Controls
 	{
 		private Brush originalForeground;
 		private ContentControl watermarkContent;
+		private bool hasFocus;
 
 		public static readonly DependencyProperty WatermarkTextProperty = DependencyProperty.Register( "WatermarkText", typeof( string ), typeof( WatermarkTextBox ), null );
 
@@ -49,6 +50,15 @@ namespace CS.Windows.Controls
 		public WatermarkTextBox()
 		{
 			DefaultStyleKey = typeof( WatermarkTextBox );
+			TextChanged += WatermarkTextBoxTextChanged;
+		}
+
+		private void WatermarkTextBoxTextChanged( object sender, TextChangedEventArgs e )
+		{
+			if( !hasFocus )
+			{
+				SetWatermarkVisibility();
+			}
 		}
 
 		public override void OnApplyTemplate()
@@ -62,7 +72,7 @@ namespace CS.Windows.Controls
 		protected override void OnGotFocus( RoutedEventArgs e )
 		{
 			base.OnGotFocus( e );
-
+			hasFocus = true;
 			watermarkContent.Visibility = Visibility.Collapsed;
 			Foreground = FocusedForeground;
 		}
@@ -70,7 +80,7 @@ namespace CS.Windows.Controls
 		protected override void OnLostFocus( RoutedEventArgs e )
 		{
 			base.OnLostFocus( e );
-
+			hasFocus = false;
 			SetWatermarkVisibility();
 			Foreground = originalForeground;
 		}

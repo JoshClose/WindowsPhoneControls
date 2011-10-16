@@ -2,7 +2,7 @@
 // Copyright 2011 Josh Close
 // This file is a part of CS.Windows.Controls and is licensed under the MS-PL
 // See LICENSE.txt for details or visit http://www.opensource.org/licenses/ms-pl.html
-// https://github.com/JoshClose/Windows.Controls
+// https://github.com/JoshClose/WindowsPhoneControls
 #endregion
 using System;
 using System.Net;
@@ -141,6 +141,7 @@ namespace CS.Windows.Controls
 			if( Password != passwordBox.Password )
 			{
 				passwordBox.Password = Password;
+				SetWatermarkVisibility();
 			}
 		}
 

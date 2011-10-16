@@ -21,6 +21,9 @@ namespace ExampleApp.WP7
 	public class MainPageViewModel : INotifyPropertyChanged
 	{
 		private string password;
+		private string preFilledText = "this is the text";
+		private string fillOnClickText;
+		private string fillOnClickPassword;
 
 		public string Password
 		{
@@ -29,6 +32,36 @@ namespace ExampleApp.WP7
 			{
 				password = value;
 				RaisePropertyChanged( "Password" );
+			}
+		}
+
+		public string PreFilledText
+		{
+			get { return preFilledText; }
+			set
+			{
+				preFilledText = value;
+				RaisePropertyChanged( "PreFilledText" );
+			}
+		}
+
+		public string FillOnClickText
+		{
+			get { return fillOnClickText; }
+			set
+			{
+				fillOnClickText = value;
+				RaisePropertyChanged( "FillOnClickText" );
+			}
+		}
+
+		public string FillOnClickPassword
+		{
+			get { return fillOnClickPassword; }
+			set
+			{
+				fillOnClickPassword = value;
+				RaisePropertyChanged( "FillOnClickPassword" );
 			}
 		}
 
@@ -45,6 +78,16 @@ namespace ExampleApp.WP7
 		public void ButtonClick( object sender, RoutedEventArgs e)
 		{
 			var x = "";
+		}
+
+		public void FillTextBoxButtonClick( object sender, RoutedEventArgs e )
+		{
+			FillOnClickText = "this is the text";
+		}
+
+		public void FillPasswordBoxButtonClick( object sender, RoutedEventArgs e )
+		{
+			FillOnClickPassword = "this is the password";
 		}
 	}
 }
