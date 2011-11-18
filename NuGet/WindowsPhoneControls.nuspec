@@ -2,12 +2,14 @@
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>WindowsPhoneControls</id>
+	<title>Windows Phone Controls</title>
     <version>0.3.0</version>
     <authors>Josh Close</authors>
+	<copyright>Josh Close 2011</copyright>
     <licenseUrl>http://www.opensource.org/licenses/ms-pl.html</licenseUrl>
     <projectUrl>https://github.com/JoshClose/WindowsPhoneControls</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Controls for Windows Phone: WatermarkTextBox, WatermarkPasswordBox</description>
-    <tags>watermark watermarktextbox watermarkpasswordbox textbox passwordbox windows phone 7</tags>
+    <tags>wp7 watermark watermarktextbox watermarkpasswordbox textbox passwordbox windows phone 7</tags>
   </metadata>
 </package>

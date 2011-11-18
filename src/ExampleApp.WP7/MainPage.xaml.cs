@@ -43,5 +43,15 @@ namespace ExampleApp.WP7
 		{
 			( (MainPageViewModel)DataContext ).FillPasswordBoxButtonClick( sender, e );
 		}
+
+		private void Button_Click_3( object sender, RoutedEventArgs e )
+		{
+			watermarkTextBoxClick.Focus();
+		}
+
+		private void Button_Click_4( object sender, RoutedEventArgs e )
+		{
+			watermarkPasswordBoxClick.Focus();
+		}
 	}
 }

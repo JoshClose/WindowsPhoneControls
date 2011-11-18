@@ -61,6 +61,18 @@
 							</Style>
 						</Controls:WatermarkTextBox.WatermarkStyle>
 					</Controls:WatermarkTextBox>
+					
+					<TextBlock Text="Disabled WatermarkTextBox" />
+					<Controls:WatermarkTextBox WatermarkText="this is the watermark" />
+					
+					<TextBlock Text="WatermarkTextBox Focus On Click" />
+					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
+											   x:Name="watermarkTextBoxClick"/>
+					<Button Content="click to focus" Click="Button_Click_3" />
+					
+					<!-- ***************************** -->
+					<!-- WatermarkPasswordBox Examples -->
+					<!-- ***************************** -->
 
 					<TextBlock Text="PasswordBox" />
 					<PasswordBox />
@@ -92,6 +104,11 @@
 					</Controls:WatermarkPasswordBox>
 
 					<Button Click="Button_Click">Button</Button>
+
+					<TextBlock Text="WatermarkPasswordBox Focus On Click" />
+					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
+											   x:Name="watermarkPasswordBoxClick"/>
+					<Button Content="click to focus" Click="Button_Click_4" />
 				</StackPanel>
 			</ScrollViewer>
 		</Grid>
