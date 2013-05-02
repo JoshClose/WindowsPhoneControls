@@ -24,6 +24,7 @@ namespace ExampleApp.WP7
 		private string preFilledText = "this is the text";
 		private string fillOnClickText;
 		private string fillOnClickPassword;
+	    private bool isEnabled;
 
 		public string Password
 		{
@@ -65,6 +66,16 @@ namespace ExampleApp.WP7
 			}
 		}
 
+	    public bool IsEnabled
+	    {
+            get { return isEnabled; }
+	        set
+	        {
+	            isEnabled = value;
+	            RaisePropertyChanged("IsEnabled");
+	        }
+	    }
+
 		public event PropertyChangedEventHandler PropertyChanged;
 
 		public void RaisePropertyChanged( string propertyName )
@@ -89,5 +100,10 @@ namespace ExampleApp.WP7
 		{
 			FillOnClickPassword = "this is the password";
 		}
+
+        public void ToggleIsEnabledClick( object sender, RoutedEventArgs e )
+        {
+            IsEnabled = !IsEnabled;
+        }
 	}
 }

@@ -11,7 +11,7 @@ https://github.com/JoshClose/Windows.Controls
     xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows" 
 	xmlns:Controls="clr-namespace:CS.Windows.Controls">
 
-	<ControlTemplate x:Key="PhoneDisabledTextBoxTemplate" TargetType="Controls:WatermarkTextBox">
+	<ControlTemplate x:Key="PhoneDisabledTextBoxTemplate" TargetType="TextBox">
 		<ContentControl x:Name="ContentElement" BorderThickness="0" Padding="{TemplateBinding Padding}" Margin="{StaticResource PhoneTextBoxInnerMargin}"
 						HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
 	</ControlTemplate>

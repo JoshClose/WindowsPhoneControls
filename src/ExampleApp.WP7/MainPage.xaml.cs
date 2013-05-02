@@ -53,5 +53,10 @@ namespace ExampleApp.WP7
 		{
 			watermarkPasswordBoxClick.Focus();
 		}
+
+        private void Button_Click_5( object sender, RoutedEventArgs e )
+        {
+            ( (MainPageViewModel)DataContext ).ToggleIsEnabledClick( sender, e );
+        }
 	}
 }

@@ -69,6 +69,12 @@
 					<Controls:WatermarkTextBox WatermarkText="this is the watermark"
 											   x:Name="watermarkTextBoxClick"/>
 					<Button Content="click to focus" Click="Button_Click_3" />
+                    
+                    <TextBlock Text="WatermarkTextBox toggle enabled" />
+                    <Controls:WatermarkTextBox WatermarkText="this is the watermark" 
+                                               IsEnabled="{Binding IsEnabled, Mode=OneWay}" />
+                    <Button Content="click to toggle IsEnabled" Click="Button_Click_5" />
+                    
 					
 					<!-- ***************************** -->
 					<!-- WatermarkPasswordBox Examples -->
